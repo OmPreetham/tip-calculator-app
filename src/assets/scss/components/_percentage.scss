@@ -1,0 +1,17 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+
+@mixin percentage() {
+  border: none;
+  border-radius: 0.3rem;
+
+  width: 100%;
+
+  outline: transparent;
+
+  padding: 0.8rem 1.2rem;
+
+  background-color: $clr-neutral-very-dark-cyan;
+
+  @include font-percentages-bold;
+}

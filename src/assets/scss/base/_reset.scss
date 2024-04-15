@@ -61,11 +61,16 @@ h6 {
   isolation: isolate;
 }
 /*
-  9. remove ul properties for navigation
+  9. remove ul properties 
 */
-nav {
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+input[type='number'],
+input[inputmode='numeric'] {
+  -webkit-appearance: none; /* Webkit browsers */
+  -moz-appearance: none; /* Firefox */
+  appearance: none; /* Other browsers */
 }

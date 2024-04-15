@@ -2,7 +2,7 @@ const App = () => {
   const percentages = [5, 10, 15, 25, 50]
 
   return (
-    <>
+    <div className="wrapper">
       <header className="header">
         <img
           className="header__image"
@@ -30,13 +30,15 @@ const App = () => {
               {percentages.map((item, index) => {
                 return (
                   <li key={index} className="values__item">
-                    <button className="values__percent">{item}%</button>
+                    <button value={item} className="values__percent">
+                      {item}%
+                    </button>
                   </li>
                 )
               })}
               <li className="values__item">
                 <input
-                  className="values__custom-persent"
+                  className="values__input"
                   type="number"
                   id="custom"
                   name="custom"
@@ -93,7 +95,7 @@ const App = () => {
           <button className="result__reset">Reset</button>
         </div>
       </main>
-    </>
+    </div>
   )
 }
 export default App

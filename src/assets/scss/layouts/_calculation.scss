@@ -1,0 +1,18 @@
+@use '../utils/variables' as *;
+
+.calculation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 2rem;
+
+  background-color: $clr-neutral-very-dark-cyan;
+
+  border-radius: 0.75rem;
+
+  &__result-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

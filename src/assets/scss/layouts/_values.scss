@@ -1,0 +1,36 @@
+@use '../utils/variables' as *;
+@use '../components/input' as *;
+@use '../components/percentage' as *;
+@use '../base/topography' as *;
+
+.values {
+  display: flex;
+  flex-direction: column;
+  gap: $large-gap;
+
+  padding: 1rem;
+
+  &__label {
+    @include font-label-regular;
+  }
+
+  &__input {
+    @include input;
+  }
+
+  &__percent {
+    @include percentage;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $small-gap;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: $base-gap;
+  }
+}

@@ -1,0 +1,15 @@
+@use '../utils/variables' as *;
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $large-gap;
+
+  background-color: $clr-neutral-white;
+
+  max-width: 900px;
+
+  padding: 2rem;
+
+  border-radius: 1.5rem;
+}
