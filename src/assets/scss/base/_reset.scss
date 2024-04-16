@@ -40,6 +40,7 @@ button,
 textarea,
 select {
   font: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 /*
   7. Avoid text overflows
@@ -61,20 +62,21 @@ h6 {
   isolation: isolate;
 }
 /*
-  9. remove ul properties 
+  9. Remove ul properties 
 */
 ul {
   list-style-type: none;
   padding-left: 0;
 }
-
+/*
+  10. Remove input sninners  
+*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
   margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-
 input[type='number'] {
   -moz-appearance: textfield; /* Firefox */
 }
