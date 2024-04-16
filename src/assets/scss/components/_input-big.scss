@@ -1,0 +1,11 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+@mixin input-big {
+  @include input;
+
+  &::placeholder {
+    font-size: 1.35rem;
+    color: $clr-neutral-grayish-cyan;
+  }
+}

@@ -68,9 +68,13 @@ ul {
   padding-left: 0;
 }
 
-input[type='number'],
-input[inputmode='numeric'] {
-  -webkit-appearance: none; /* Webkit browsers */
-  -moz-appearance: none; /* Firefox */
-  appearance: none; /* Other browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
 }

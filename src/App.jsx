@@ -16,13 +16,20 @@ const App = () => {
             <label className="values__label" htmlFor="bill">
               Bill
             </label>
-            <input
-              className="values__input"
-              type="number"
-              id="bill"
-              name="bill"
-              placeholder="0"
-            />
+            <div className="values__input-wrapper">
+              <img
+                className="values__input-icon"
+                src="/images/icon-dollar.svg"
+                alt="Dollar Icon"
+              />
+              <input
+                className="values__input"
+                type="number"
+                id="bill"
+                name="bill"
+                placeholder="0"
+              />
+            </div>
           </div>
           <div className="values-wrapper">
             <p className="values__label">Select Tip %</p>
@@ -38,7 +45,7 @@ const App = () => {
               })}
               <li className="values__item">
                 <input
-                  className="values__input"
+                  className="values__input values__input--placeholder"
                   type="number"
                   id="custom"
                   name="custom"
@@ -52,13 +59,20 @@ const App = () => {
             <label className="values__label" htmlFor="people">
               Number of People
             </label>
-            <input
-              className="values__input"
-              type="text"
-              id="people"
-              name="people"
-              placeholder="0"
-            />
+            <div className="values__input-wrapper">
+              <img
+                className="values__input-icon"
+                src="/images/icon-person.svg"
+                alt="Person Icon"
+              />
+              <input
+                className="values__input"
+                type="text"
+                id="people"
+                name="people"
+                placeholder="0"
+              />
+            </div>
           </div>
         </div>
         <div className="calculation">
@@ -68,31 +82,17 @@ const App = () => {
                 Tip Amount <br />
                 <span className="calculation__person">/ person</span>
               </p>
-              <p className="calculation__amount">
-                <img
-                  className="calculation__image"
-                  src="/images/icon-dollar.svg"
-                  alt="Dollar SVG"
-                />
-                0.00
-              </p>
+              <p className="calculation__amount">$0.00</p>
             </div>
             <div className="calculation__result-wrapper">
               <p className="calculation__name">
                 Total <br />
                 <span className="calculation__person">/ person</span>
               </p>
-              <p className="calculation__amount">
-                <img
-                  className="calculation__image"
-                  src="/images/icon-dollar.svg"
-                  alt="Dollar SVG"
-                />
-                0.00
-              </p>
+              <p className="calculation__amount">$0.00</p>
             </div>
           </div>
-          <button className="result__reset">Reset</button>
+          <button className="calculation__reset">Reset</button>
         </div>
       </main>
     </div>

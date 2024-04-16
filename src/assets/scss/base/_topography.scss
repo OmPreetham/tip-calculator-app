@@ -9,9 +9,39 @@
   font-weight: $fw-700;
 }
 
-@mixin font-label-regular {
+@mixin font-label-bold {
   color: $clr-neutral-grayish-cyan;
   font-size: $fs-root;
   font-family: $ff-space;
   font-weight: $fw-700;
+}
+
+@mixin font-cal-name-bold {
+  color: $clr-neutral-white;
+  font-size: $fs-root;
+  font-family: $ff-space;
+  font-weight: $fw-700;
+}
+
+@mixin font-cal-person-bold {
+  color: $clr-neutral-grayish-cyan;
+  font-size: 0.8rem;
+  font-family: $ff-space;
+  font-weight: $fw-700;
+}
+
+@mixin font-cal-amount-bold {
+  color: $clr-primary-strong-cyan;
+  font-size: 3rem;
+  font-family: $ff-space;
+  font-weight: $fw-700;
+}
+
+@mixin font-reset-bold {
+  color: $clr-neutral-very-dark-cyan;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-family: $ff-space;
+  font-weight: $fw-700;
+  line-height: 1;
 }

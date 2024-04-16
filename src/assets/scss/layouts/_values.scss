@@ -1,21 +1,36 @@
 @use '../utils/variables' as *;
-@use '../components/input' as *;
+@use '../components/input-big' as *;
+@use '../components/custom' as *;
 @use '../components/percentage' as *;
 @use '../base/topography' as *;
 
 .values {
   display: flex;
   flex-direction: column;
-  gap: $large-gap;
+  gap: $extra-large-gap;
 
   padding: 1rem;
 
   &__label {
-    @include font-label-regular;
+    @include font-label-bold;
+  }
+
+  &__input-wrapper {
+    position: relative;
+  }
+
+  &__input-icon {
+    position: absolute;
+    top: 30%;
+    left: 5%;
   }
 
   &__input {
-    @include input;
+    @include input-big;
+  }
+
+  &__input--placeholder {
+    @include custom;
   }
 
   &__percent {
@@ -32,5 +47,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: $base-gap;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .values {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }

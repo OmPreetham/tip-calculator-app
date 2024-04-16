@@ -1,29 +1,25 @@
 @use '../utils/variables' as *;
 @use '../base/topography' as *;
 
-@mixin percentage() {
-  @include font-percentages-bold;
+@mixin reset-button() {
+  @include font-reset-bold;
+
+  cursor: pointer;
+
+  padding: 0.6em 1em;
 
   border: none;
   border-radius: 0.3rem;
 
-  width: 100%;
-
-  outline: transparent;
-
-  padding: 0.5rem 1.2rem;
-
-  background-color: $clr-neutral-very-dark-cyan;
-
-  cursor: pointer;
+  color: $clr-neutral-very-dark-cyan;
+  background-color: $clr-neutral-very-dark-less-cyan;
 
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
-  &:focus,
   &:hover,
+  &:focus,
   &:active {
     background-color: $clr-primary-light-cyan;
-    color: $clr-neutral-very-dark-cyan;
   }
 
   &--selected {

@@ -7,9 +7,18 @@
 
   background-color: $clr-neutral-white;
 
-  max-width: 900px;
-
   padding: 2rem;
 
   border-radius: 1.5rem;
+}
+
+@media screen and (max-width: 810px) {
+  .dashboard {
+    grid-template-columns: none;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    padding: 1rem;
+  }
 }

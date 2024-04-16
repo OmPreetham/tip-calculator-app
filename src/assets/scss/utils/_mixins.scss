@@ -1,0 +1,35 @@
+@use '../utils/variables' as *;
+
+@mixin input() {
+  border: 0.15rem solid transparent;
+  border-radius: 0.3rem;
+
+  width: 100%;
+  height: 100%;
+
+  outline: transparent;
+
+  padding: 0.2em 0.7em;
+
+  background-color: $clr-neutral-very-light-grayish-cyan;
+
+  color: $clr-neutral-very-dark-cyan;
+  font-weight: $fw-700;
+  font-size: 1.5rem;
+  text-align: end;
+
+  transition: border 0.3s ease-in-out;
+
+  &:focus,
+  &:hover {
+    border: 0.15rem solid $clr-primary-light-cyan;
+  }
+
+  &::placeholder {
+    font-weight: $fw-700;
+  }
+
+  &--error-state {
+    border: 0.15rem solid orangered;
+  }
+}

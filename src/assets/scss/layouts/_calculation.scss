@@ -1,11 +1,14 @@
 @use '../utils/variables' as *;
+@use '../base/topography' as *;
+@use '../components/reset-button' as *;
 
 .calculation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: $base-gap;
 
-  padding: 2rem;
+  padding: 2.5rem;
 
   background-color: $clr-neutral-very-dark-cyan;
 
@@ -13,6 +16,34 @@
 
   &__result-wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    gap: $base-gap;
+  }
+
+  &__block-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $large-gap;
+  }
+
+  &__name {
+    @include font-cal-name-bold;
+  }
+
+  &__person {
+    @include font-cal-person-bold;
+  }
+
+  &__amount {
+    @include font-cal-amount-bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__reset {
+    @include reset-button;
   }
 }
