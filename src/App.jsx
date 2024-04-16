@@ -6,7 +6,7 @@ const App = () => {
       <header className="header">
         <img
           className="header__image"
-          src="/images/logo.svg"
+          src="images/logo.svg"
           alt="SPLLITTER Logo"
         />
       </header>
@@ -19,7 +19,7 @@ const App = () => {
             <div className="values__input-wrapper">
               <img
                 className="values__input-icon"
-                src="/images/icon-dollar.svg"
+                src="images/icon-dollar.svg"
                 alt="Dollar Icon"
               />
               <input
@@ -62,7 +62,7 @@ const App = () => {
             <div className="values__input-wrapper">
               <img
                 className="values__input-icon"
-                src="/images/icon-person.svg"
+                src="images/icon-person.svg"
                 alt="Person Icon"
               />
               <input
